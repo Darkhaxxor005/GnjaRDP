@@ -8,7 +8,7 @@ import platform
 from setuptools import setup
 from subprocess import *
 
-PACKAGE_NAME = "impacket"
+PACKAGE_NAME = "gaja"
 
 VER_MAJOR = 0
 VER_MINOR = 9
@@ -51,11 +51,11 @@ setup(name = PACKAGE_NAME,
       long_description = read('README.md'),
       long_description_content_type="text/markdown",
       platforms = ["Unix","Windows"],
-      packages=['impacket', 'impacket.dcerpc', 'impacket.examples', 'impacket.dcerpc.v5', 'impacket.dcerpc.v5.dcom',
-                'impacket.krb5', 'impacket.ldap', 'impacket.examples.ntlmrelayx',
-                'impacket.examples.ntlmrelayx.clients', 'impacket.examples.ntlmrelayx.servers',
-                'impacket.examples.ntlmrelayx.servers.socksplugins', 'impacket.examples.ntlmrelayx.utils',
-                'impacket.examples.ntlmrelayx.attacks'],
+      packages=['gaja', 'gaja.dcerpc', 'gaja.examples', 'gaja.dcerpc.v5', 'gaja.dcerpc.v5.dcom',
+                'gaja.krb5', 'gaja.ldap', 'gaja.examples.ntlmrelayx',
+                'gaja.examples.ntlmrelayx.clients', 'gaja.examples.ntlmrelayx.servers',
+                'gaja.examples.ntlmrelayx.servers.socksplugins', 'gaja.examples.ntlmrelayx.utils',
+                'gaja.examples.ntlmrelayx.attacks'],
       scripts = glob.glob(os.path.join('examples', '*.py')),
       data_files = data_files,
       install_requires=['pyasn1>=0.2.3', 'pycryptodomex', 'pyOpenSSL>=0.13.1', 'six', 'ldap3>=2.5,!=2.5.2,!=2.5.0,!=2.6', 'ldapdomaindump>=0.9.0', 'flask>=1.0'],
